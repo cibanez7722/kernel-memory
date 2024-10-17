@@ -20,7 +20,8 @@ internal static class ConfigurationBuilderExtensions
         string? settingsDirectory = null)
     {
         // Load env var name, either Development or Production
-        var env = Environment.GetEnvironmentVariable(AspnetEnvVar) ?? string.Empty;
+        //var env = Environment.GetEnvironmentVariable(AspnetEnvVar) ?? string.Empty;
+        var env = Environment.GetEnvironmentVariable(AspnetEnvVar) ?? "Development";
 
         // Detect the folder containing configuration files
         settingsDirectory ??= Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)

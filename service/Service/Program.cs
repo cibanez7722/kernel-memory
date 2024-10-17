@@ -154,7 +154,8 @@ internal static class Program
 
         // *************************** START ***********************************
 
-        var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+        // var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+        var env = "Development";
         if (string.IsNullOrEmpty(env))
         {
             app.Logger.LogError("ASPNETCORE_ENVIRONMENT env var not defined.");
