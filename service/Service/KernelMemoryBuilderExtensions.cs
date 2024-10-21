@@ -1,10 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
 using Microsoft.Extensions.Configuration;
-using Microsoft.KernelMemory.Service;
 
-// ReSharper disable once CheckNamespace - reduce number of "using" statements
-namespace Microsoft.KernelMemory;
+namespace Microsoft.KernelMemory.Service;
 
 /// <summary>
 /// Kernel Memory builder extensions for ASP.NET apps using settings in appsettings.json
